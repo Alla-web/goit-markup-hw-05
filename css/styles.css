@@ -662,6 +662,8 @@ button {
 }
 
 .close-form-button {
+  cursor: pointer;
+
   width: 24px;
   height: 24px;
 
@@ -688,7 +690,8 @@ button {
   background-color: #404bbf;
 }
 
-.close-form-button:hover .close-icon {
+.close-form-button:hover .close-icon,
+.close-form-button:focus .close-icon {
   fill: #ffffff;
 }
 
@@ -740,22 +743,29 @@ button {
 }
 
 .form-input {
+  background-color: transparent;
+  outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
   padding: 11px 11px 11px 38px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .input-icon {
   fill: #2e2f42;
   position: absolute;
-  top: 10px;
-  left: 12px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .input-icon {
