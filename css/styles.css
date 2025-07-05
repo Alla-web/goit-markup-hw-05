@@ -543,6 +543,7 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .email-input {
@@ -569,7 +570,6 @@ button {
 }
 
 .send-email-button {
-  margin-left: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
