@@ -807,14 +807,13 @@ button {
 
 .visually-hidden + .checkbox-label .agreement-checkbox-span {
   fill: transparent;
-  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -864,9 +863,6 @@ button {
   border-radius: 4px;
 
   display: block;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 
   font-weight: 500;
   line-height: 1.5;
